@@ -71,8 +71,7 @@ The default values for various paramters parsed to the experiment are given in `
 #### Total Parameters
 * ```--node_num:```  Number of nodes. Default is 10.
 * ```--E:```         Number of local epochs. Default is 5.
-* ```--notes:```     Notes of Experiments. Default is empty string.
-* 
+
 #### Optima Parameters
 * ```--optimizer:``` Optimizer. Default: 'sgd'. Options: 'sgd', 'adam'
 * ```--lr:```        Learning rate set to 0.005 by default.
