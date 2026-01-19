@@ -15,11 +15,23 @@ This code requires the following:
 http://yann.lecun.com/exdb/mnist/
 https://s3.amazonaws.com/nist-srd/SD19/by_class.zip
 http://www.cs.toronto.edu/∼kriz/cifar.html
+* Generate training data on MNIST
+```
+python generate_data.py --dataset mnist --n_class 10 --alpha 0.5
+```
+* Generate training data on CIFAR10
+```
+python generate_data.py --dataset cifar10 --n_class 10 --alpha 0.5
+```
+* Generate training data on CIFAR100
+```
+python generate_data.py --dataset cifar100 --n_class 100 --alpha 0.5
+```
 
 ## Running the experiments
 The baseline experiment trains the model in the conventional way.
 
-* To train the FedProto on MNIST with n=3, k=100 under statistical heterogeneous setting:
+* To train the FedRC on MNIST with n=3, k=100 under statistical heterogeneous setting:
 ```
 python federated_main.py --mode task_heter --dataset mnist --num_classes 10 --num_users 20 --ways 3 --shots 100 --stdev 2 --rounds 100 --train_shots_max 110 --ld 1
 ```
