@@ -2,6 +2,7 @@
 
 Implementation of the paper accepted by TMC 2026 : .
 
+Supplement to the FedRC training process
 ## Requirments
 This code requires the following:
 * Python 3.6 or greater
